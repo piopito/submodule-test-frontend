@@ -10,7 +10,7 @@
     "test:e2e": "npx cypress open",
     "lint": "npx eslint \"src/**/*.{js,jsx,ts,tsx,html}\" --quiet --fix",
     "format": "npx prettier \"src/**/*.{js,jsx,ts,tsx,html,css,scss}\" --write",
-    "prepare": "husky install"
+    "prepare": "husky install && npm run lint && npm run format"
   },
   "private": true,
   "dependencies": {
